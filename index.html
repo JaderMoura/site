@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link type="text/css" rel="stylesheet" href="css/style.css" media="all">
+    <link type="text/css" rel="stylesheet" href="css/reset.css" media="all">
+</head>
+
+<body>
+
+<section id="banner" class="parallax-container container1">
+    <div class="parallax"><img src="images/cool.jpg"></div>
+
+    <header>
+        <nav>
+            <div class="nav-wrapper  grey darken-4">
+                <a href="#!" class="brand-logo right"></a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse "><i class="material-icons md-white ">menu</i></a>
+
+                <ul class="left hide-on-med-and-down ">
+
+
+                    <li><a class=" orange-text text-accent-2" href="#loguin">Entrar</a>
+                    </li>
+
+                    <li><a class="orange-text text-accent-2" href="#cadastros">Cadastros </a></li>
+
+                </ul>
+
+                <ul class="side-nav" id="mobile-demo">
+                    <li><a class=" orange-text text-accent-2" href="#loguin">Entrar</a></li>
+                    <li><a class="orange-text text-accent-2" href="#cadastros">Cadastros </a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <br><br><br><br><br>
+
+    <div class="row">
+        <div class="col s12 m12 l4 offset-l4">
+            <div class="card  N/A transparent">
+                <div class="card-content white-text">
+                    <h1 class="card-title  orange-text text-accent-4"><b>On Hair</b></h1>
+
+                    <p class="tamanho center-align orange-text text-accent-2"><b>Com o On Hair Agora você tem
+                        facilidade de agendar os
+                        serviços de seu salão
+                        de beleza preferido na palma de sua mão.</b></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section id="cadastros" class="row">
+    <div class="col s12 m6 l6">
+        <div class="card N/A transparent">
+
+            <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="images/salaoFundo.jpg">
+            </div>
+
+            <div class="card-content">
+                <span class="card-title activator orange-text text-accent-4">Cadastro Usuário<i
+                        class="material-icons right">more_vert</i></span>
+
+                <p><a>Aproveite as facilidades que o On hair disponibiliza.</a></p>
+            </div>
+
+            <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Dados do Cadastro<i
+                        class="material-icons right">close</i></span>
+
+                <form id="cadastroUsuario" name="formcadastroUsuario" method="post"
+                      action="modulo/cadastros/cadastarUsuario.php">
+
+                    <div class="col s12 m12 l12 grey darken-3  center-align"><a class="white-text">Dados do Usu&aacute;rio</a>
+                    </div>
+
+                    <div class="input-field col s12 m12 l6   ">
+                        <input id="nomeUsuario" name="nomeUsuario" type="text" class="validate" required>
+                        <label for="nomeUsuario">Nome</label>
+                    </div>
+
+                    <div class="input-field col s12 m12 l6 ">
+                        <input id="sobrenome" name="sobrenome" type="text" class="validate" required>
+                        <label for="sobrenome">Sobrenome</label>
+                    </div>
+
+                    <div class="input-field col s12 m12 l6 ">
+                        <input id="fixoUsuario" name="fixoUsuario" type="text" class="validate"
+                               minlength="10" maxlength="10"
+                               required
+                               title="XX  0000 0000">
+                        <label for="fixoUsuario">Telefone Fixo</label>
+                    </div>
+
+                    <div class="input-field col s12 m12 l6 ">
+                        <input id="celularUsuario" name="celularUsuario" type="text" class="validate"
+                               minlength="11"
+                               maxlength="11" required
+                               title="XX 9 0000 0000">
+                        <label for="celularUsuario">Telefone Celular</label>
+                    </div>
+
+                    <div class="input-field col s12 m12 l6 ">
+
+                        <input id="ruaUsuario" name="ruaUsuario" type="text" class="validate" required>
+                        <label for="ruaUsuario">Rua</label>
+
+                    </div>
+
+                    <div class="input-field col s12 m12 l6 ">
+                        <input id="cepUsuario" name="cepUsuario" type="text" class="validate" minlength="9"
+                               maxlength="9"
+                               placeholder="00000-000" required>
+                        <label for="cepUsuario">CEP</label>
+                    </div>
+
+                    <div class="input-field col s12 m12 l6 ">
+                        <input id="bairroUsuario" name="bairroUsuario" type="text" class="validate" required>
+                        <label for="bairroUsuario">Bairro</label>
+                    </div>
+
+                    <div class="input-field col s12 m12 l6 ">
+                        <input id="numeroUsuario" name="numeroUsuario" type="text" class="validate " required>
+                        <label for="numeroUsuario">N&uacute;mero</label>
+                    </div>
+
+                    <div class="input-field col s12 m12 l6 ">
+                        <input id="cidadeUsuario" name="cidadeUsuario" type="text" class="validate" required>
+                        <label for="cidadeUsuario">Cidade</label>
+                    </div>
+
+                    <div class="col s12 m12 l12 grey darken-3  center-align" style="margin-top: 5%;"><a
+                            class="white-text">Dados
+                        de loguin</a></div>
+
+                    <div class="input-field col s12 m12 l6 ">
+                        <input id="emailUsuario" name="emailUsuario" type="email" class="validate" required>
+                        <label for="emailUsuario" data-error="wrong" data-success="right">Email</label>
+                    </div>
+
+                    <div class="input-field col s12 m12 l6 ">
+                        <input id="senhaUsuario" name="senhaUsuario" type="password" class="validate" required
+                               title="Minimo de 8 caracteres"
+                               minlength="8">
+                        <label for="senhaUsuario">Senha</label>
+                    </div>
+
+                    <div class="input-field col s12 m12 l6 ">
+                        <input id="senha2Usuario" name="senha2Usuario" type="password" class="validate" required
+                               title="Minimo de 8 caracteres" minlength="8" oninput="validaSenhaUsuario(this)">
+                        <label for="senha2Usuario">Repita a Senha</label>
+                    </div>
+
+                    <div class="input-field col s12 m12 l6 ">
+                        <br><br><br>
+                    </div>
+                    <button class="btn waves-effect waves-light col s12 m12 l12 center-align" type="submit"
+                            name="action">Cadastrar
+                        <i class="material-icons right">send</i>
+                    </button>
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="col s12 m6 l6">
+        <div class="card N/A transparent ">
+
+            <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="images/saloes.jpg">
+            </div>
+            <div class="card-content">
+                <span class="card-title activator orange-text text-accent-4">Cadastro Salão<i
+                        class="material-icons right">more_vert</i></span>
+
+                <p><a>Venha fazer parte do nosso portifólio de salões</a></p>
+            </div>
+            <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Dados do Cadastro<i
+                        class="material-icons right">close</i></span>
+
+                <h1>Entre em contato conosco e solicite a vista de um de nossos representantes.</h1>
+
+                <form hidden id="cadastroSalao" name="formcadastroSalao" method="post"
+                      action="modulo/cadastros/cadastrarSalao.php">
+
+                    <div class="col s12 m12 l12 grey darken-3  center-align"><a class="white-text">Dados do
+                        Sal&atilde;o</a></div>
+
+                    <div class="input-field col s12 m12 l6   ">
+                        <input id="nomeSalao" name="nomeSalao" type="text" class="validate" required>
+                        <label for="nomeSalao">Nome</label>
+                    </div>
+
+                    <div class="input-field col s12 m12 l6 ">
+                        <input id="nomeFantasia" name="nomeFantasia" type="text" class="validate" required>
+                        <label for="nomeFantasia">Nome Fantasia</label>
+                    </div>
+
+                    <div class="input-field col s12 m12 l6 ">
+                        <input id="fixoSalao" name="fixoSalao" type="text" class="validate" minlength="10"
+                               maxlength="10"
+                               required
+                               title="XX  0000 0000">
+                        <label for="fixoSalao">Telefone Fixo</label>
+                    </div>
+
+                    <div class="input-field col s12 m12 l6 ">
+                        <input id="celularSalao" name="celularSalao" type="text" class="validate" minlength="11"
+                               maxlength="11" required
+                               title="XX 9 0000 0000">
+                        <label for="celularSalao">Telefone Celular</label>
+                    </div>
+
+                    <div class="input-field col s12 m12 l6 ">
+
+                        <input id="ruaSalao" name="ruaSalao" type="text" class="validate" required>
+                        <label for="ruaSalao">Rua</label>
+
+                    </div>
+
+                    <div class="input-field col s12 m12 l6 ">
+                        <input id="cepSalao" name="cepSalao" type="text" class="validate" minlength="9" maxlength="9"
+                               placeholder="00000-000" required>
+                        <label for="cepSalao">CEP</label>
+                    </div>
+
+                    <div class="input-field col s12 m12 l6 ">
+                        <input id="bairroSalao" name="bairroSalao" type="text" class="validate" required>
+                        <label for="bairroSalao">Bairro</label>
+                    </div>
+
+                    <div class="input-field col s12 m12 l6 ">
+                        <input id="numeroSalao" name="numeroSalao" type="text" class="validate " required>
+                        <label for="numeroSalao">N&uacute;mero</label>
+                    </div>
+
+                    <div class="input-field col s12 m12 l6 ">
+                        <input id="cidadeSalao" name="cidadeSalao" type="text" class="validate" required>
+                        <label for="cidadeSalao">Cidade</label>
+                    </div>
+
+                    <div class="col s12 m12 l12 grey darken-3  center-align" style="margin-top: 5%;"><a
+                            class="white-text">Dados
+                        de loguin</a></div>
+
+                    <div class="input-field col s12 m12 l6 ">
+                        <input id="email" name="email" type="email" class="validate" required>
+                        <label for="email" data-error="wrong" data-success="right">Email</label>
+                    </div>
+
+                    <div class="input-field col s12 m12 l6 ">
+                        <input id="senha" name="senha" type="password" class="validate" required
+                               title="Minimo de 8 caracteres"
+                               minlength="8">
+                        <label for="senha">Senha</label>
+                    </div>
+
+                    <div class="input-field col s12 m12 l6 ">
+                        <input id="senha2" name="senha2" type="password" class="validate" required
+                               title="Minimo de 8 caracteres" minlength="8" oninput="validaSenhaSalao(this)">
+                        <label for="senha2">Repita a Senha</label>
+                    </div>
+
+                    <div class="input-field col s12 m12 l6 ">
+                        <br><br><br>
+                    </div>
+                    <button class="btn waves-effect waves-light col s12 m12 l12 center-align" type="submit"
+                            name="action">Cadastrar
+                        <i class="material-icons right">send</i>
+                    </button>
+                </form>
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+</section>
+
+
+<section id="loguin" class="parallax-container container2">
+
+    <div class="parallax"><img src="images/barbeiro1.jpg"></div>
+
+    <div class="row">
+        <div class="col s12 m12 l6 offset-l3">
+            <div class="card  N/A transparent">
+                <div class="card-content white-text">
+                    <h1 class="card-title  orange-text text-accent-4"><b>Para você Comodidade</b></h1>
+
+                    <p class="tamanho center-align orange-text text-accent-2"><b>Agora você pode
+                        encontrar horários que se adequem à sua disponibilidade.</b></p>
+                </div>
+                <div class="card-action">
+                    <a class="orange-text text-accent-4" href="#"></a>
+                    <!-- Modal Trigger -->
+                    <a class="waves-effect waves-light orange-text text-accent-4  modal-trigger" href="#logUsuario"><b>Logar
+                        Usuário</b></a>
+                    <!-- Modal Structure -->
+                    <div id="logUsuario" class="modal">
+                        <div class="modal-content">
+
+                            <form name="loguinUsuario" role="form" method="post"
+                                  action="modulo/loguin/loguinUsuario.php">
+
+                                <div class="row">
+
+                                    <div class="input-field col s12 l6">
+                                        <input id="emailLog" name="emailLog" type="email" class="validate">
+                                        <label for="emailLog">Email</label>
+                                    </div>
+
+                                    <div class="input-field col s12 l6">
+                                        <input id="senhaLog" name="senhaLog" type="password" class="validate">
+                                        <label for="senhaLog">Senha</label>
+                                    </div>
+
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button class="btn waves-effect waves-light col s12 m12 l4 center-align "
+                                            type="submit" name="action"
+                                    > Logar Usuário
+                                    </button>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col s12 m12 l6 ">
+            <div class="card N/A transparent">
+                <div class="card-content white-text">
+                    <h1 class="card-title  orange-text text-accent-4"><b>Para seu Salão Visibilidade</b></h1>
+
+                    <p class="tamanho center-align orange-text text-accent-2"><b>Com o On Hair você pode conquistar
+                        novos
+                        clientes
+                        com maior facilidade.</b></p>
+                </div>
+                <div class="card-action">
+                    <a class="orange-text text-accent-4" href="#"></a>
+                    <a class="waves-effect waves-light orange-text text-accent-4 modal-trigger" href="#logSalao"><b>Logar
+                        Salão</b></a>
+                    <!-- Modal Structure -->
+                    <div id="logSalao" class="modal">
+                        <div class="modal-content">
+
+                            <form name="loguinSalao" role="form" method="post" action="modulo/loguin/loguinSalao.php">
+
+                                <div class="row">
+
+                                    <div class="input-field col s12 l6">
+                                        <input id="emailSalao" name="emailSalao" type="email" class="validate">
+                                        <label for="emailSalao">Email</label>
+                                    </div>
+
+                                    <div class="input-field col s12 l6">
+                                        <input id="senhaSalao" name="senhaSalao" type="password" class="validate">
+                                        <label for="senhaSalao">Senha</label>
+                                    </div>
+
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button class="btn waves-effect waves-light col s12 m12 l4 center-align "
+                                            type="submit" name="action"> Logar Salão
+                                    </button>
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<section id="atalho" class="fixed-action-btn click-to-toggle" style="bottom: 45px; right: 24px;">
+    <a class="btn-floating btn-large grey"> <i class="large material-icons">menu</i></a>
+
+    <ul>
+        <li><a class="btn-floating yellow darken-1 tooltipped  modal-trigger" data-position="left" data-delay="50"
+               data-tooltip="Loguin Usuario" href="#logUsuario"><i class="material-icons">perm_identity</i></a>
+        </li>
+        <li><a class="btn-floating blue-grey darken-1 tooltipped  modal-trigger" data-position="left" data-delay="50"
+               data-tooltip="Loguin Salão" href="#logSalao"><i class="material-icons">perm_identity</i></a>
+        </li>
+
+
+        <li><a class="btn-floating blue tooltipped" data-position="left" data-delay="50" data-tooltip="inicio"
+               href="#banner"><i class="material-icons">present_to_all</i></a></li>
+    </ul>
+
+</section>
+
+<footer class="page-footer grey darken-3 ">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <p class="grey-text text-lighten-4" style="margin-left: 25%;"> Telefone: (19)99999-9999</p>
+                <p class="grey-text text-lighten-4" style="margin-left: 25%;"> Email: onhair@dominio.com</p>
+
+
+            </div>
+            <div class="col l6 offset-l2 s12 ">
+                <ul class="icons">
+                    <li class="white-text">Nos sigam pelo:</li>
+                    <li><a href="#" class="normaltip" title="Facebook"><img src="images/face.gif" width="9%" alt=""></a>
+                        <a href="#" class="normaltip" title="Twitter"><img src="images/twiter.gif" width="9%"
+                                                                           alt=""></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-copyright grey darken-4">
+        <div class="container ">
+            &copy; 2016 On Hair Todos os direitos reservados.
+            <a class="grey-text text-lighten-4 right " style="margin-top: 1.5%;" href="#"><i class="material-icons"></i></a>
+        </div>
+    </div>
+
+</footer>
+
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+<script type="text/javascript" src="js/functions.js"></script>
+
+
+</body>
+</html>
